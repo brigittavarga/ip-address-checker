@@ -19,7 +19,7 @@ const getData = (ip) => {
 
 const renderMap = ({lat, lng}) => {
 
-    if (mymap != undefined) {
+   if (mymap != undefined) {
         mymap.outerHTML = "";
         mymap.off();
         mymap.remove();
@@ -35,6 +35,7 @@ const renderMap = ({lat, lng}) => {
         zoomOffset: -1,
         accessToken: 'pk.eyJ1IjoiYnJpZ2l0dGF2YXJnYSIsImEiOiJja3F3aHFia2Iwb2ZnMm9xYWtuajJscDZjIn0.gnNm7k7H5whjrkEnJcD0LA'
     }).addTo(mymap);
+
 }
 
 
